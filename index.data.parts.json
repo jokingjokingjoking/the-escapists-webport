@@ -1,0 +1,27 @@
+{
+  "original": {
+    "bytes": 47974318,
+    "sha256": "3129eba003ae6b99c1a43e5048ea43d76d8327f2001fdd5580301e1a1147fd33"
+  },
+  "chunkSize": 20971520,
+  "parts": [
+    {
+      "index": 0,
+      "file": "index.data.000",
+      "bytes": 20971520,
+      "sha256": "917da466da342ecb2103c4bb2e2c8b3d06bcf8ac7b24a6c59f35c6c6919ca91f"
+    },
+    {
+      "index": 1,
+      "file": "index.data.001",
+      "bytes": 20971520,
+      "sha256": "7e7fa16fe02848cedecd25b92c79899152acadbaa03ede3f53cfa67dd912609b"
+    },
+    {
+      "index": 2,
+      "file": "index.data.002",
+      "bytes": 6031278,
+      "sha256": "d2515ab7883b9e7aaa9a8f9b986fa0d76b5944015190174a1d9c3865b0c67612"
+    }
+  ]
+}

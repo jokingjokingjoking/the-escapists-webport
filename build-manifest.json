@@ -1,0 +1,73 @@
+{
+  "unchangedGeneratedFiles": 117,
+  "differences": [],
+  "sharedListRuntimeSha256": "7c8002dc74206c3ab1f912594a079112c124407b39c1f136b010e3d744cfa511",
+  "comparison": "Generated game files are unchanged; runtime compatibility fixes remain separate. Not a claim of full execution equivalence.",
+  "bundle": {
+    "index.html": {
+      "bytes": 1261,
+      "sha256": "451b724110d445dc52353d491d4e3595f76491bc6dc5ae521206d7d987a9b555"
+    },
+    "index.js": {
+      "bytes": 575492,
+      "sha256": "2681066bb164196b5cdd3fbe0cf4da0cabf15429a8aebab044c7fb86074caecf"
+    },
+    "index.wasm": {
+      "bytes": 7452417,
+      "sha256": "144362805d070ec1142b26128fe9c9aab7131c3eaef059eb8d409f06ba32a067"
+    },
+    "index.data": {
+      "bytes": 47974318,
+      "sha256": "3129eba003ae6b99c1a43e5048ea43d76d8327f2001fdd5580301e1a1147fd33"
+    },
+    "index.data.parts": [
+      {
+        "index": 0,
+        "file": "index.data.000",
+        "bytes": 20971520,
+        "sha256": "917da466da342ecb2103c4bb2e2c8b3d06bcf8ac7b24a6c59f35c6c6919ca91f"
+      },
+      {
+        "index": 1,
+        "file": "index.data.001",
+        "bytes": 20971520,
+        "sha256": "7e7fa16fe02848cedecd25b92c79899152acadbaa03ede3f53cfa67dd912609b"
+      },
+      {
+        "index": 2,
+        "file": "index.data.002",
+        "bytes": 6031278,
+        "sha256": "d2515ab7883b9e7aaa9a8f9b986fa0d76b5944015190174a1d9c3865b0c67612"
+      }
+    ],
+    "index.data.logical": {
+      "bytes": 47974318,
+      "sha256": "3129eba003ae6b99c1a43e5048ea43d76d8327f2001fdd5580301e1a1147fd33",
+      "note": "concatenated index.data.000 + 001 + 002; each <=20MiB"
+    }
+  },
+  "deploy": {
+    "note": "Publish index.html, index.js, index.wasm, index.data.000/001/002, index.data.parts.json, build-manifest.json. Do NOT publish monolithic index.data (47MB) - split parts replace it at runtime.",
+    "maxPartBytes": 20971520,
+    "parts": [
+      {
+        "index": 0,
+        "file": "index.data.000",
+        "bytes": 20971520,
+        "sha256": "917da466da342ecb2103c4bb2e2c8b3d06bcf8ac7b24a6c59f35c6c6919ca91f"
+      },
+      {
+        "index": 1,
+        "file": "index.data.001",
+        "bytes": 20971520,
+        "sha256": "7e7fa16fe02848cedecd25b92c79899152acadbaa03ede3f53cfa67dd912609b"
+      },
+      {
+        "index": 2,
+        "file": "index.data.002",
+        "bytes": 6031278,
+        "sha256": "d2515ab7883b9e7aaa9a8f9b986fa0d76b5944015190174a1d9c3865b0c67612"
+      }
+    ]
+  }
+}

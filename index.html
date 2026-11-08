@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Escapists</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#000;color:#ddd;font:14px monospace;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center}
+canvas{display:block;image-rendering:pixelated;max-width:100vw;max-height:100vh;object-fit:contain;outline:none}
+#status{position:absolute;top:10px;left:10px;pointer-events:none}
+</style>
+<canvas id="canvas" width="960" height="720" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+<div id="status">Loading game…</div>
+<script>
+var Module = {
+  canvas: document.getElementById('canvas'),
+  print: function (text) { console.log(text); },
+  printErr: function (text) { console.error(text); },
+  setStatus: function (text) { document.getElementById('status').textContent = text; },
+  onRuntimeInitialized: function () { window.escapistsReady = true; document.getElementById('status').textContent = ''; this.canvas.focus(); }
+};
+Module.canvas.addEventListener('pointerdown', function () { Module.canvas.focus(); });
+</script>
+<script async type="text/javascript" src="index.js"></script>
+</html>
+
+
